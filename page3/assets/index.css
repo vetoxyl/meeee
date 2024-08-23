@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #343a40;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #17a2b8;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #117a8b;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  nav {
+    background-color: #343a40;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: left;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #f8f9fa;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background-color: #495057;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+
+/* Table Styles */
+table {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #343a40;
+    color: #fff;
+}
+
+thead th {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody td:first-child {
+    font-weight: bold;
+    text-align: left;
+    background-color: #e9ecef;
+}
+
+tbody td[colspan="4"] {
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody td {
+        display: block;
+        text-align: right;
+        padding: 10px;
+        border: none;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    tbody tr td:first-child {
+        text-align: left;
+        background-color: transparent;
+        font-weight: bold;
+    }
+}
