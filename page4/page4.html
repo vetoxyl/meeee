@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/styles/index.css" rel="stylesheet">
+</head>
+<body>
+    <nav aria-label="Breadcrumbs">
+        <ul id="top" role="list">
+        <li><a href="../index.html">Homepage</a></li>
+        </ul>
+    </nav>
+    <section><picture>
+        <source
+         media="(min-width: 800px)"
+         srcset="./assets/images/veto200px.jpg,
+                ./assets/images/veto_original 720w,
+                sizes= "33.3vw">
+        <source
+         srcset="./assets/images/veto200px.jpg 2x,
+         ./assets/images/veto_original 1x">
+        <img src="./assets/images/veto200px.jpg" alt="My picture">
+       </picture>
+    </section>
+    
+       <div>
+        <audio src="./assets/audio/asake.mp3" controls>
+       </audio>
+    </div>
+
+    <div>
+        <video src="./assets/video/videoplayback.mp4" controls></video>
+    </div>
+</body>
+</html>
