@@ -18,6 +18,9 @@ jobs:
 
     - name: Log in to Amazon ECR
       uses: aws-actions/amazon-ecr-login@v1
+      with:
+        registry: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+        region: ${{ secrets.AWS_REGION }}
 
     - name: Build the Docker image
       run: |
